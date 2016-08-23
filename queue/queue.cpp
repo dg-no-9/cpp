@@ -26,6 +26,7 @@ T Queue<T>::dequeue(){
 	T data = temp->data;
 	delete temp;
 	front = front->next;
+	count--;
 	return data;
 }
 
